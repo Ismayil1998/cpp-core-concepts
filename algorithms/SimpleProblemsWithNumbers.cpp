@@ -151,4 +151,185 @@ int main(){
   }else{
     cout<<"Wrong digit!"<<endl;
   }  
+
+  //Shift Right
+    int number;
+    cin>>number;
+  if (number>100&&number<999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=number/100;
+    cout<<modul1<<modul<<modul2;
+  }else{
+    cout<<"Wrong digit!"<<endl;
+  } 
+
+  //Shift Left
+   int number;
+   cin>>number;
+  if (number>100&&number<999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=number/100;
+    cout<<modul<<modul2<<modul1;
+  }else{
+    cout<<"Wrong digit!"<<endl;
+  }  
+
+  //Rearrange Digits
+  int number;
+  cin>>number;
+  if (number>100&&number<999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=number/100;
+    cout<<modul1<<modul2<<modul;
+  }else{
+    cout<<"Wrong digit!"<<endl;
+  } 
+
+  //Rearrange Digits II
+  int number;
+  cin>>number;
+  if (number>100&&number<999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=number/100;
+    cout<<modul2<<modul<<modul1;
+  }else{
+    cout<<"Wrong digit!"<<endl;
+  }   
+
+  //Extract Hundreds Digit
+      int number;
+    cin>>number;
+  if (number>999)
+  {
+    int divid=(number/100)%10;
+    cout<<divid<<endl;
+  }
+  else
+  {
+   cout<<"Wrong digit!"<<endl;
+  }
+
+  //Palindrome Check
+  int number;
+  cin>>number;
+  if (number>999&&number<9999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=(number/100)%10;
+    int modul3=number/1000;
+   if (modul==modul3&&modul1==modul2)
+   {
+    cout<<"Palindrome"<<endl;
+   }
+   else
+   {
+    cout<<"Not Palindrome"<<endl;
+   }
+   
+  }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }
+
+  //Digit Sum Difference
+  int number;
+  cin>>number;
+  if (number>10000)
+  {
+    int n1=number/10000;
+    int n2=(number/1000)%10;
+    int m1=number%10;
+    int m2=(number%100)/10;
+    int total=n1+n2;
+    int total2=m1+m2;
+    int ferq=total-total2;
+    cout<<ferq<<endl;
+  }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }  
+   
+  //Palindrome Number Check
+     int number;
+   cin>>number;
+  if (number>10000&&number<99999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=(number/100)%10;
+    int modul3=(number/1000)%10;
+    int modul4=number/10000;
+   if (modul==modul4&&modul1==modul3)
+   {
+    cout<<"Palindrome"<<endl;
+   }
+   else
+   {
+    cout<<"Not Palindrome"<<endl;
+   }
+   
+  }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }
+
+  //Digit Square Sum
+    int number;
+    cin>>number;
+  if (number>10000&&number<99999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=(number/100)%10;
+    int modul3=(number/1000)%10;
+    int modul4=number/10000;
+   int netice= pow(modul,2);
+   int netice1= pow(modul1,2);
+   int netice2= pow(modul2,2);
+   int netice3= pow(modul3,2);
+   int netice4= pow(modul4,2);
+   int total=netice+netice1+netice2+netice3+netice4;
+   cout<<total<<endl;
+  }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }
+
+  //Ascending Digits Check
+   int number;
+  cin>>number;
+  if (number>10000&&number<99999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=(number/100)%10;
+    int modul3=(number/1000)%10;
+    int modul4=number/10000;
+   if (modul4<modul3&&modul3<modul2&&modul2<modul1&&modul1<modul)
+   {
+    cout<<"Ascending"<<endl;
+   }
+   else
+   {
+    cout<<"Not Ascending"<<endl;
+   }
+   
+  }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }  
 }
