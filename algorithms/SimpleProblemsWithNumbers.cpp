@@ -540,4 +540,229 @@ int main(){
   {
     cout<<"Wrong access! "<<endl;
   } 
+
+  //Minimum of Three Numbers
+     double X;
+  double Y;
+  double Z;
+  cin>>X;
+  cin>>Y;
+  cin>>Z;
+  if (X<Y&&X<Z)
+  {
+    cout<<X<<endl;
+  }else if (Y<X&&Y<Z)
+  {
+    cout<<Y<<endl;
+  }else if (Z<X&&Z<Y)
+  {
+    cout<<Z<<endl;
+  }
+  else
+  {
+    cout<<"Wrong access! "<<endl;
+  }
+
+  //Conditional Doubling and Absolute Values
+  double X;
+  double Y;
+  double Z;
+  cin>>X;
+  cin>>Y;
+  cin>>Z;
+  if (Z>=Y&&Z>=X&&Y<=Z&&Y>=X&&X<=Z&&X<=Y)
+  {
+    double art=Z*2;
+    double art1=Y*2;
+    double art2=X*2;
+    cout<<art2<<" "<<art1<<" "<<art<<endl;
+   
+  }
+  else
+  {
+    cout<<(X/(-1))<<" "<<Y<<" "<<(Z/(-1))<<endl;
+  }
+
+  //Number Comparison
+    double A;
+  double B;
+  cin>>A;
+  cin>>B;
+  if (A>B)
+  {
+    cout<<A<<endl;
+  }
+  else
+  {
+    cout<<A<<" "<<B<<endl;
+  }
+
+  //Number Transformation
+  double X;
+  double Y;
+  cin>>X;
+  cin>>Y;
+  if (X!=Y)
+  {
+   if (X>Y&&Y<X)
+   {
+  
+    double hasil=X*2;
+    double yarim=(X+Y)/2;
+    cout<<hasil<<" "<<yarim<<endl;
+   }
+   else if (Y>X&&X<Y)
+   {
+    double hasil1=Y*2;
+    double yarim1=(X+Y)/2;
+    cout<<yarim1<<" "<<hasil1<<endl;
+   }
+   
+  }
+  else
+  {
+    cout<<"Wrong access!"<<endl;
+  }
+
+  //Number Replacement
+     double X;
+  double Y;
+  cin>>X;
+  cin>>Y;
+  if (X<=Y)
+  {
+    X=0;
+    cout<<X<<" "<<Y<<endl;
+  
+  }
+  else
+  {
+    cout<<X<<" "<<Y<<endl;
+  }
+
+  //Number Selection
+       double a;
+  double b;
+  double c;
+  cin>>a;
+  cin>>b;
+  cin>>c;
+
+  if (a>1&&a<3&&b>1&&b<3&&c>1&&c<3)
+  {
+    cout<<a<<" "<<b<<" "<<c<<endl;
+  
+  }else if (a>1&&a<3&&b>1&&b<3)
+  {
+    cout<<a<<" "<<b<<endl;
+  }else if (a>1&&a<3&&c>1&&c<3)
+  {
+    cout<<a<<" "<<c<<endl;
+  } else if (b>1&&b<3&&c>1&&c<3)
+  {
+   cout<<b<<" "<<c<<endl;
+  }else if (a>1&&a<3)
+  {
+    cout<<a<<endl;
+  }else if (b>1&&b<3)
+  {
+    cout<<b<<endl;
+  }else if (c>1&&c<3)
+  {
+   cout<<c<<endl;
+  }
+  else
+  {
+    cout<<"No Numbers Found "<<endl;
+  }
+
+  //Number Replacement
+  double a;
+  double b;
+  double c;
+  double d;
+  cin>>a;
+  cin>>b;
+  cin>>c;
+  cin>>d;
+  if (d<=c&&d<=b&&d<=a&&c>=d&&c<=b&&c<=a&&b>=d&&b>=c&&a>=d&&a>=c&&a>=b)
+  {
+    cout<<a<<" "<<a<<" "<<a<<" "<<a<<endl;
+  }else if (a<b&&a<c&&a<d&&b>a&&b<c&&b<d&&c>a&&c>b&&c<d&&d>a&&d>b&&d>c)
+  {
+    cout<<a<<" "<<b<<" "<<c<<" "<<d<<endl;
+  }else
+  {
+    double num1=pow(a,2);
+    double num2=pow(b,2);
+    double num3=pow(c,2);
+    double num4=pow(d,2);
+    cout<<num1<<" "<<num2<<" "<<num3<<" "<<num4<<endl;
+  }  
+
+  //Number Transformation
+    double x;
+  double y;
+  cin>>x;
+  cin>>y;
+  if (x<0&&y<0)
+  {
+    cout<<x/(-1)<<" "<<y/(-1)<<endl;
+  }else if (x<0||y<0)
+  {
+    
+    cout<<(x+0.5)<<" "<<(y+0.5)<<endl;
+  }else if (x>0&&y>0&&x<0.5&&x>2.0&&y<0.5&&y>2.0)
+  {
+   
+    cout<<(x/10)<<" "<<(y/10)<<endl;
+  }else
+  {
+     
+    cout<<(x/10)<<" "<<(y/10)<<endl;
+  }
+
+  //Division Remainder Check
+   int a;
+  int b;
+  int r;
+  int s;
+  cin>>a;
+  cin>>b;
+  cin>>r;
+  cin>>s;
+  if (a>0&&b>0&&r>0&&s>0&&b!=0)
+  {
+    int qaliq=a%b;
+    if (qaliq==r||qaliq==s)
+    {
+      cout<<"Yes"<<endl;
+    }else
+    {
+        cout<<"No"<<endl;
+    }   
+    
+  }else
+  {
+    cout<<"No"<<endl;
+  }  
+
+  //Value Swapping Without Temporary Variable
+  int a;
+  int b;
+  cin>>a;
+  cin>>b;
+  cout<<b<<" "<<a<<endl;  
+
+  //Character Swapping
+     char a;
+  char b;
+  cin>>a;
+  cin>>b;
+
+  if (a=='A'&&b=='B')
+  {
+    cout<<"Possible"<<endl;
+  }
+
 }
