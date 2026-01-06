@@ -332,4 +332,212 @@ int main(){
   {
     cout<<"Wrong digit!"<<endl;
   }  
+
+  //Reverse Digits
+  int number;
+  cin>>number;
+  if (number>10000&&number<99999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=(number/100)%10;
+    int modul3=(number/1000)%10;
+    int modul4=number/10000;
+   cout<<modul<<modul1<<modul2<<modul3<<modul4<<endl;
+  }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }  
+  
+  //Identical Digits Check
+  int number;
+  cin>>number;
+  if (number>10000&&number<99999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=(number/100)%10;
+    int modul3=(number/1000)%10;
+    int modul4=number/10000;
+    if (modul4==modul||modul4==modul1||modul4==modul2||modul4==modul3||modul3==modul4||modul3==modul2||modul3==modul1||modul3==modul||modul2==modul4||modul2==modul3||modul2==modul1||modul2==modul||modul1==modul4||modul1==modul3||modul1==modul2||modul1==modul||modul==modul4||modul==modul3||modul==modul2||modul==modul1)
+    {
+        cout<<"Identical Digits Found"<<endl;
+    }else
+    {
+     cout<<"No Identical Digits"<<endl;
+    } 
+    }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }
+
+  //Unique Digits Check
+    int number;
+  cin>>number;
+  if (number>999&&number<9999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=(number/100)%10;
+    int modul3=number/1000;
+   if (modul3==modul2||modul3==modul1||modul3==modul||modul2==modul3||modul2==modul1||modul2==modul||modul1==modul3||modul1==modul2||modul1==modul||modul==modul3||modul==modul2||modul==modul1)
+   {
+    cout<<"Duplicate Digits Found"<<endl;
+   }
+   else
+   {
+    cout<<"All Digits are Different"<<endl;
+   }
+   
+  }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }   
+
+  //Digit 3 Check
+   int number;
+  cin>>number;
+  if (number>999&&number<9999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=(number/100)%10;
+    int modul3=number/1000;
+   if (modul3==3||modul3==3||modul3==3||modul2==3||modul2==3||modul2==3||modul1==3||modul1==3||modul1==3||modul==3||modul==3||modul==3)
+   {
+    cout<<"Digit 3 Found"<<endl;
+   }
+   else
+   {
+    cout<<"Digit 3 Not Found"<<endl;
+   }
+   
+  }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }  
+  
+  //Consecutive Digits Check
+     int number;
+    cin>>number;
+  if (number>999&&number<9999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=(number/100)%10;
+    int modul3=number/1000;
+   if (modul3==3&&modul2==7||modul2==3&&modul1==7||modul1==3&&modul==7)
+   {
+    cout<<"Consecutive Digits Found"<<endl;
+   }
+   else
+   {
+    cout<<"Consecutive Digits Not Found"<<endl;
+   }
+   
+  }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }
+
+  //Armstrong Number Check
+   int number;
+  cin>>number;
+  if (number>999&&number<9999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=(number/100)%10;
+    int modul3=number/1000;
+   if (number==pow(modul3,4)+pow(modul2,4)+pow(modul1,4)+pow(modul,4))
+   {
+    cout<<"Armstrong Number"<<endl;
+   }
+   else
+   {
+    cout<<"Not Armstrong Number"<<endl;
+   }
+   
+  }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }
+
+  //Sum of Digits Check
+    int number;
+  cin>>number;
+  if (number>999&&number<9999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=(number/100)%10;
+    int modul3=number/1000;
+    int total=modul3+modul2+modul1+modul;
+   if (total%2==0&&total%3==0)
+   {
+    cout<<"Multiple of 2 and 3"<<endl;
+   }
+   else
+   {
+    cout<<"Not a Multiple of 2 and 3"<<endl;
+   }
+   
+  }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }
+
+  //Divisibility Check
+    int number;
+    cin>>number;
+  if (number>999&&number<9999)
+  {
+    int modul=number%10;
+    int modul1=(number/10)%10;
+    int modul2=(number/100)%10;
+    int modul3=number/1000;
+   if (number%modul==0&&number%modul1==0&&number%modul2==0&&number%modul3==0)
+   {
+    cout<<"Divisible by All Digits"<<endl;
+   }
+   else
+   {
+    cout<<"Not Divisible by All Digits"<<endl;
+   }
+   
+  }
+  else
+  {
+    cout<<"Wrong digit!"<<endl;
+  }
+
+  //Maximum of Three Numbers
+   double X;
+  double Y;
+  double Z;
+  cin>>X;
+  cin>>Y;
+  cin>>Z;
+
+  if (X>Y&&X>Z)
+  {
+    cout<<X<<endl;
+  }else if (Y>X&&Y>Z)
+  {
+    cout<<Y<<endl;
+  }else if (Z>X&&Z>Y)
+  {
+    cout<<Z<<endl;
+  }
+  else
+  {
+    cout<<"Wrong access! "<<endl;
+  } 
 }
